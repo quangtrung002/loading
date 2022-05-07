@@ -1,0 +1,38 @@
+.container{
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+}
+.round{
+  width: 15px;
+  height: 15px;
+  background-color: #b4e7dc;
+  border-radius: 50%;
+  animation: decrease 1.5s linear infinite;
+}
+.round2{
+  height: 15px;
+  width: 15px;
+  background-color: #36D7B7;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation:  increase 1.5s linear infinite;
+}
+
+@keyframes increase{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(4);
+  }
+}
+
+@keyframes decrease{
+  0%{
+    transform: scale(4);
+  }
+  100%{
+    transform: scale(0);
+  }
+}

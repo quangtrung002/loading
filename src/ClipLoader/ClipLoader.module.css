@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0) scale(0.6);
+  animation: rotate 1s alternate infinite;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 25px solid;
+  border-radius: 50%;
+  border-color: #36D7B7 transparent #36D7B7 #36D7B7;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  border: 22.5px solid;
+  border-color: #fff;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    ;
+  }
+}

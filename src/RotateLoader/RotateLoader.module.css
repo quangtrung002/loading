@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  animation: rotate 2s linear infinite;
+}
+
+.rotateLoader {
+  width: 15px;
+  height: 15px;
+  background-color: #36D7B7;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.rotateLoader:not(:nth-child(2)) {
+  background-color: #278270;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

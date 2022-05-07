@@ -1,0 +1,40 @@
+.container{
+  position: relative;
+  top: -10%;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #36D7B7;
+}
+.hour{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 15px;
+  width: 1.5px;
+  background-color: #36D7B7;
+  animation:  rotate 6s linear infinite;
+}
+.second{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 20px;
+  width: 1.5px;
+  background-color: red;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes  rotate {
+  0%{
+    transform: rotateZ(0);
+    transform-origin: top;
+  }
+  100%{
+    transform: rotateZ(360deg);
+    transform-origin: top;
+  }
+}

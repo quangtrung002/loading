@@ -1,0 +1,30 @@
+.container{
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  animation: increase 3s linear infinite;
+}
+.item{
+  width: 25px;
+  height: 25px;
+  background-color: #36D7B7;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: opacity 1.5s linear infinite;
+}
+.item:last-child{
+  width: 50px;
+  height: 50px;
+  background-color: #e181e2;
+  animation-delay: 0.5s;
+}
+@keyframes increase{
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes opacity{
+  50%{
+    transform: scale(1);
+  }
+}

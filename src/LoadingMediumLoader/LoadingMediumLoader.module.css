@@ -1,0 +1,48 @@
+.container{
+  position: relative;
+  top: -10%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.loadingTitle{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-family: 'ZCOOL KuaiLe', cursive;
+  text-align: center;
+  font-size: 10px;
+  color: #737373;
+  text-transform: uppercase;
+  animation: textchange 2s infinite ease-in-out;
+}
+.loadingMedium::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(164, 75, 33, 0.3);
+  animation: change 2s linear infinite;
+}
+@keyframes change{
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b202;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+
+@keyframes textchange {
+  50%{
+    color: rgb(227, 220, 220);
+  }
+}
